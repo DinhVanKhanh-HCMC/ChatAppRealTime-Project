@@ -36,7 +36,7 @@ ChatZalo Realtime là một ứng dụng nhắn tin thời gian thực được 
 1. Clone repository:
    ```sh
    git clone https://github.com/DinhVanKhanh-HCMC/ChatAppRealTime-Project.git
-   cd Zalo-CNM/Backend
+   cd ChatAppRealTime-Project/Backend
    ```
 2. Cấu hình **application.properties**
 3. Chạy ứng dụng bằng Maven hoặc Gradle:
