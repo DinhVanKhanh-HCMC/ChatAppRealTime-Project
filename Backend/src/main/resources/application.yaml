@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: Chat
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI}
+      auto-index-creation: true
+    redis:
+      host: ${SPRING_REDIS_HOST}
+      port: ${SPRING_REDIS_PORT}
+      password: ${SPRING_REDIS_PASSWORD}
+      username: ${SPRING_REDIS_USERNAME}
+  mail:
+    host: ${SPRING_MAIL_HOST}
+    port: ${SPRING_MAIL_PORT}
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH}
+          starttls:
+            enable: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE}
+  servlet:
+    multipart:
+      max-file-size: ${SPRING_MULTIPART_MAX_FILE_SIZE}
+      max-request-size: ${SPRING_MULTIPART_MAX_REQUEST_SIZE}
+
+server:
+  port: ${SERVER_PORT}
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION}
+  expirationRefreshToken: ${JWT_REFRESHMENTS}
+
+aws:
+  s3:
+    access-key-id: ${AWS_S3_ACCESS_KEY_ID}
+    secret-access-key: ${AWS_S3_SECRET_ACCESS_KEY}
